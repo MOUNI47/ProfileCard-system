@@ -1,6 +1,6 @@
 <h1> Interactive Profile Card System </h1>
 
-<b><h3> Project Overview </h3></b>
+<h3> Project Overview </h3>
 The Interactive Profile Card System is a reusable React application that demonstrates core React concepts such as components, props, state management, conditional rendering, and list rendering.
 
 This project displays multiple profile cards dynamically using data stored in an array.
@@ -26,6 +26,8 @@ This project displays multiple profile cards dynamically using data stored in an
 - CSS3
 
 ---
+## Author
 
-## 📁 Folder Structure
+Mamatha D
+Engineering Student | React Learner
 
