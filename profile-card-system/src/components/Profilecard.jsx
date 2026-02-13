@@ -2,10 +2,17 @@ import React, { useState } from "react";
 import "../App.css";
 
 function ProfileCard({ name, role, description }) {
-  const [isFollowing, setIsFollowing] = useState(false);
 
-  const handleFollow = () => {
-    setIsFollowing(!isFollowing);
+  const [status, setStatus] = useState("Follow");
+
+  const handleClick = () => {
+    if (status === "Follow") {
+      setStatus("Following");
+    } else if (status === "Following") {
+      setStatus("Unfollow");
+    } else {
+      setStatus("Follow");
+    }
   };
 
   return (
@@ -14,11 +21,11 @@ function ProfileCard({ name, role, description }) {
       <h4>{role}</h4>
       <p>{description}</p>
 
-      <button
-        className={isFollowing ? "unfollow-btn" : "follow-btn"}
-        onClick={handleFollow}
+      <button 
+        className={`btn ${status.toLowerCase()}`} 
+        onClick={handleClick}
       >
-        {isFollowing ? "Unfollow" : "Follow"}
+        {status}
       </button>
     </div>
   );
