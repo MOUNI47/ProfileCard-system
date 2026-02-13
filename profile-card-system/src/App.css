@@ -82,4 +82,31 @@ button:hover {
   align-items: center;
   min-height: 100vh;
 }
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Follow */
+.follow {
+  background-color: #007bff;
+}
+
+/* Following */
+.following {
+  background-color: #28a745;
+}
+
+/* Unfollow */
+.unfollow {
+  background-color: #dc3545;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
 
